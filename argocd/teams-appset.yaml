@@ -5,11 +5,11 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/<username>/control-plane
+      repoURL: https://github.com/<joereyna>/control-plane
       revision: HEAD
       directories:
       - path: "teams/*"
-      - path: teams/USERNAME
+      - path: teams/joereyna
         exclude: true
   template:
     metadata:
@@ -21,7 +21,7 @@ spec:
           releaseName: '{{path.basename}}'
           valueFiles:
           - '../../{{path}}/values.yaml'
-        repoURL: 'https://github.com/<username>/control-plane'
+        repoURL: 'https://github.com/<joereyna>/control-plane'
         path: charts/team
         targetRevision: HEAD
       destination:
